@@ -16,13 +16,13 @@ body {
   overflow: hidden;
 }
 
+/* Style for all buttons */
 .buttons {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   padding: 25px;
 }
-
 button {
   width: 70px;
   height: 50px;
@@ -33,7 +33,6 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
-
 button:hover {
   background-color: #636688;
 }
@@ -51,6 +50,7 @@ button:active {
   background-color: #ffe1b3;
 }
 
+/* style for Calculator display section */
 #display {
   width: 100%;
   padding: 20px;
@@ -58,4 +58,5 @@ button:active {
   text-align: left;
   border: none;
   background-color: #3a3f77;
+  color: #fff;
 }
