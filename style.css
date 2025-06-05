@@ -14,25 +14,26 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  max-width: 500px;
+  max-width: 400px;
+  height: 367px;
   padding: 32px 24px;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-/* Style for all buttons */
 .buttons {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 10px 15px;
 }
+
 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 50px;
+  width: 65px;
+  height: 45px;
   background-color: #404258;
   color: #fff;
   border-radius: 40px;
@@ -40,38 +41,63 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
+
 button:hover {
-  background-color: #636688;
+  background-color: #7c7fa8;
 }
+
 button:active {
-  background-color: #b4baff;
+  background-color: #bec3ff;
 }
-
-
 
 .arithmetic-btn {
   background-color: #f49d1a;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
 .arithmetic-btn:hover {
-  background-color: #ffc671;
+  background-color: #ffeed2;
+  color: #000;
 }
 .arithmetic-btn:active {
-  background-color: #ffe1b3;
+  background-color: #ffffff;
+}
+
+#clear-btn {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
 
 #equal-sign {
-  background: #bdbdbd;
-  color: #23232e;
+  background: #b2b2b2;
+  color: #000;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
 
-/* style for Calculator display section */
+#equal-sign:hover {
+  background: #fff;
+}
+
 #display {
   width: 100%;
+  height: 70px;
   padding: 20px;
-  font-size: 5rem;
+  margin-bottom: 20px;
+  font-size: 2rem;
   text-align: left;
   border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
   background-color: #3a3f77;
   color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
