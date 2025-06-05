@@ -29,8 +29,8 @@ This is a simple calculator application built with JavaScript. The app provides 
 
 ## Credits
 
-Design and implementation by Moyosore Sulola
-Project for AltSchool Africa
+- Design and implementation by Moyosore Sulola
+- Project for AltSchool Africa
 
 ## License
 
