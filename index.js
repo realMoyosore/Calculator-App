@@ -45,3 +45,29 @@ function displayOnScreen(input) {
     }
 }
 
+const historyContainer = document.getElementById("history");
+let history = [];
+
+function calculateResult() {
+    try {
+        const expression = display.value;
+        const result = eval(expression);
+        display.value = result;
+        addToHistory(expression, result);
+    }
+    catch (error) {
+        display.value = "Error";
+    }
+}
+
+function addToHistory(expression, result) {
+    history.unshift(`${expression} = ${result}`);
+    if (history.length > 5) history.pop();
+    renderHistory();
+}
+
+function renderHistory() {
+    historyContainer.innerHTML = history
+        .map(item => `<div class="history-item">${item}</div>`)
+        .join('');
+}
