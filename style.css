@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 body {
   margin: 0;
   display: flex;
@@ -11,8 +13,10 @@ body {
   background-color: #242530;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   max-width: 500px;
+  padding: 32px 24px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -20,16 +24,20 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  padding: 25px;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px 15px;
 }
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70px;
   height: 50px;
   background-color: #404258;
   color: #fff;
   border-radius: 40px;
-  font-size: 3rem;
+  border: none;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -40,6 +48,8 @@ button:active {
   background-color: #b4baff;
 }
 
+
+
 .arithmetic-btn {
   background-color: #f49d1a;
 }
@@ -48,6 +58,11 @@ button:active {
 }
 .arithmetic-btn:active {
   background-color: #ffe1b3;
+}
+
+#equal-sign {
+  background: #bdbdbd;
+  color: #23232e;
 }
 
 /* style for Calculator display section */
