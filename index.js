@@ -37,3 +37,11 @@ document.addEventListener("keydown", function (event) {
         event.preventDefault();
     }
 });
+
+function displayOnScreen(input) {
+    const maxLength = 20;
+    if (display.value.length < maxLength) {
+        display.value += input;
+    }
+}
+
