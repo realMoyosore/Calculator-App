@@ -1,9 +1,17 @@
 const display = document.getElementById("display");
 const historyContainer = document.getElementById("history");
 let history = [];
+let shouldClear = false;
 
 function displayOnScreen(input) {
-  display.value += input;
+    const maxLength = 20;
+    if (shouldClear) {
+    display.value = "";
+    shouldClear = false;
+  }
+  if (display.value.length < maxLength) {
+    display.value += input;
+  }
 }
 
 function backspace() {
@@ -38,12 +46,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-function displayOnScreen(input) {
-  const maxLength = 20;
-  if (display.value.length < maxLength) {
-    display.value += input;
-  }
-}
 
 function calculate() {
   try {
@@ -66,4 +68,17 @@ function renderHistory() {
   historyContainer.innerHTML = history
     .map((item) => `<div class="history-item">${item}</div>`)
     .join("");
+}
+
+function calculate() {
+  try {
+    const expression = display.value.replace(/\^/g, '**'); 
+    const result = eval(expression);
+    display.value = result;
+    addToHistory(expression, result);
+    shouldClear = true; 
+  } catch (error) {
+    display.value = "Error";
+    shouldClear = true;
+  }
 }
