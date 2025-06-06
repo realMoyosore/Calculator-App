@@ -4,8 +4,8 @@ let history = [];
 let shouldClear = false;
 
 function displayOnScreen(input) {
-    const maxLength = 20;
-    if (shouldClear) {
+  const maxLength = 20;
+  if (shouldClear) {
     display.value = "";
     shouldClear = false;
   }
@@ -46,7 +46,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-
 function calculate() {
   try {
     const expression = display.value;
@@ -70,13 +69,19 @@ function renderHistory() {
     .join("");
 }
 
+function clearHistory() {
+  display.value = " ";
+  history = [];
+  renderHistory();
+}
+
 function calculate() {
   try {
-    const expression = display.value.replace(/\^/g, '**'); 
+    const expression = display.value.replace(/\^/g, "**");
     const result = eval(expression);
     display.value = result;
     addToHistory(expression, result);
-    shouldClear = true; 
+    shouldClear = true;
   } catch (error) {
     display.value = "Error";
     shouldClear = true;

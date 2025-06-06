@@ -58,10 +58,12 @@ button:active {
   width: 45px;
   height: 45px;
 }
+
 .arithmetic-btn:hover {
   background-color: #ffeed2;
   color: #000;
 }
+
 .arithmetic-btn:active {
   background-color: #ffffff;
 }
@@ -123,10 +125,24 @@ button:active {
   border-bottom: 1px solid #636363;
   word-break: break-all;
 }
+
 .history-item:last-child {
   border-bottom: none;
 }
+
 .history-item:hover {
   background-color: #aaaaaa;
   cursor: pointer;
+}
+
+#clear-history-btn {
+  background: #b2b2b2;
+  color: #000;
+  font-size: 1.2rem;
+  width: 55px;
+  height: 35px;
+}
+
+#clear-history-btn:hover {
+  background: #fff;
 }
