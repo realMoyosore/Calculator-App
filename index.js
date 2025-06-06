@@ -59,7 +59,7 @@ function calculate() {
 
 function addToHistory(expression, result) {
   history.unshift(`${expression} = ${result}`);
-  if (history.length > 10) history.pop();
+  if (history.length > 6) history.pop();
   renderHistory();
 }
 

@@ -107,13 +107,13 @@ button:active {
   padding: 5px 20px;
   background-color: #3f4049;
   border-radius: 10px;
-  max-height: 100%;
   color: #fff;
 }
 
 .history-section h3 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
+  margin-top: 10px;
   margin-bottom: 5px;
   border-bottom: 1px solid #636363;
   padding-bottom: 5px;
@@ -136,11 +136,13 @@ button:active {
 }
 
 #clear-history-btn {
+  position: relative;
   background: #b2b2b2;
   color: #000;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 55px;
   height: 35px;
+  margin-top: 5px;
 }
 
 #clear-history-btn:hover {
