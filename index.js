@@ -43,7 +43,7 @@ document.addEventListener("keydown", function (event) {
   } else if (keyboard.toLowerCase() === "c") {
     clearDisplay();
     event.preventDefault();
-  } else if (keyboard.toLowerCase() === "a") {
+  } else if (keyboard.toLowerCase() === "escape") {
     clearHistory();
     event.preventDefault();
   }
