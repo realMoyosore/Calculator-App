@@ -164,7 +164,7 @@ button:active {
   #clear-btn,
   #equal-sign {
     font-size: 1rem;
-    width: 45px;
+    width: 40px;
     height: 25px;
     border-radius: 20px;
   }
@@ -178,8 +178,8 @@ button:active {
   }
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
 
   .history-section {
@@ -192,7 +192,7 @@ button:active {
   }
 
   #clear-history-btn {
-    width: 45px;
+   width: 40px;
     height: 25px;
     font-size: 0.9rem;
     margin-top: 3px;
