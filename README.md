@@ -29,6 +29,9 @@ This is a simple calculator application built with JavaScript. The app provides 
 - CSS
 - JavaScript
 
+## Screenshot
+![image](https://github.com/user-attachments/assets/29d3797c-7ce7-4bb2-a672-76106a28154d)
+
 ## Credits
 
 - Design and implementation by Moyosore Sulola
