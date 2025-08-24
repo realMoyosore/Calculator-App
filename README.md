@@ -55,4 +55,4 @@ This is a simple calculator application built with HTML, CSS and JavaScript. The
 
 ## License
 
-This project is licensed for Educational purposes.
+This project is licensed for Educational purposes and developed for a AltSchool Africa Project.
